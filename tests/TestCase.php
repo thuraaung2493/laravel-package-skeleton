@@ -1,10 +1,30 @@
 <?php
 
-namespace Tests;
+declare(strict_types=1);
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
+namespace Thuraaung\Namespace\Tests;
 
-abstract class TestCase extends BaseTestCase
+use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Facade;
+use Orchestra\Testbench\TestCase as BaseTestCase;
+
+final class TestCase extends BaseTestCase
 {
-    //
+    protected function getPackageProviders($app): array
+    {
+        return [
+
+        ];
+    }
+
+    /**
+     * @param Application $app
+     * @return array<string,class-string<Facade>>
+     */
+    protected function getPackageAliases($app): array
+    {
+        return [
+
+        ];
+    }
 }

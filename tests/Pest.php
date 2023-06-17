@@ -1,3 +1,7 @@
 <?php
 
-uses(Tests\TestCase::class)->in('Feature');
+declare(strict_types=1);
+
+use Thuraaung\Namespace\Tests\TestCase;
+
+uses(TestCase::class)->in(__DIR__);
