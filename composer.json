@@ -1,5 +1,5 @@
 {
-  "name": "thuraaung/package-name",
+  "name": "thuraaung2493/package-name",
   "description": "Package description.",
   "type": "library",
   "license": "MIT",
@@ -22,7 +22,8 @@
     }
   },
   "require": {
-    "php": "^8.2"
+    "php": "^8.2",
+    "nunomaduro/mock-final-classes": "^1.2"
   },
   "require-dev": {
     "laravel/pint": "^1.10",
